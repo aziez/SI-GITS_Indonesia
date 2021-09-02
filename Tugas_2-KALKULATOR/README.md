@@ -5,6 +5,7 @@
 Selamat datang Di repositiry pengumpulan tugas dan Materi studi Independent di PT.Gits Indonesia,
 
 # Preview Program
+![alt text](https://github.com/aziez/SI-GITS_Indonesia/hasil_build.gif?raw=true)
 
 
 # Keterangan
