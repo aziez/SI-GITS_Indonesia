@@ -10,7 +10,7 @@ Program CRUD dengan menggunakan ARrayList yang disediakan oleh java,
 # LOG
 **Java pemula dengan Intelij Idea || Dengan Menerapkan Looping.Array.Method, Overloading dan Overiding**
 # Preview Program
-![alt text](https://github.com/aziez/SI-GITS_Indonesia/blob/main/Tugas_2-KALKULATOR/Hasil_build.gif?raw=true)
+![alt text](https://github.com/aziez/SI-GITS_Indonesia/blob/main/Tugas_3-To-Do/Hasil_build_edt.gif)
 
 
 # Keterangan
