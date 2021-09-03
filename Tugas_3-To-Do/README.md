@@ -2,7 +2,7 @@
 
  # SELAMAT DATANG!
 
-Selamat datang Di repositiry pengumpulan tugas dan Materi studi Independent di PT.Gits Indonesia,
+Selamat datang Di repository pengumpulan tugas dan Materi studi Independent di PT.Gits Indonesia,
 
 # PROGRAM
 Program CRUD dengan menggunakan ARrayList yang disediakan oleh java,
@@ -20,7 +20,7 @@ Folder diatas merupakan hasil generate dari aplikasi Intelij Idea dengan Build T
 
 ## File UTAMA
 
- File Utama terdapat di folder **src -> kalkulator.java**
+ File Utama terdapat di folder **src -> Todo.java**
 
 ***
 
