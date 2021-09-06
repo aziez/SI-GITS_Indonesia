@@ -23,8 +23,8 @@ Terdapat dua file class yaitu Mahasiswa dan Main, Untuk Setter dan getter terlet
 
 ## File UTAMA
 
- [x] File Setter dan Getter Terdapat Di Folder **src -> Mahasiswa.java**
- [x] File Utama terdapat di folder **src -> Main.java**
+* File Setter dan Getter Terdapat Di Folder **src -> Mahasiswa.java**
+* File Utama terdapat di folder **src -> Main.java**
 
 ***
 
