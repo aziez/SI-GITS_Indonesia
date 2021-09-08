@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/img1"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/img2"
+            app:civ_border_color="@color/merah"
+            app:civ_border_width="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/WaveHeader" />
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/muhamad_abdul_aziz"
+            android:textAlignment="center"
+            android:textColor="@color/pink"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="3dp"
+            android:textStyle="bold"
+            android:layout_marginTop="36dp"
+            app:layout_constraintTop_toBottomOf="@+id/profile" />
+    </LinearLayout>
+
+
+    <com.scwang.wave.MultiWaveHeader
+        android:id="@+id/WaveHeader"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:mwhCloseColor="@color/pink"
+        app:mwhColorAlpha="0.45"
+        app:mwhGradientAngle="45"
+        app:mwhStartColor="@color/teal_700"
+        app:mwhVelocity="1"
+        app:mwhWaveHeight="50dp"
+        app:mwhWaves="MultiWave" />
+
+    <com.scwang.wave.MultiWaveHeader
+        android:id="@+id/PairWaveve"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleY="-1"
+        app:mwhCloseColor="@color/merah"
+        app:mwhColorAlpha="0.50"
+        app:mwhStartColor="@color/pink"
+        app:mwhVelocity="1"
+        app:mwhWaveHeight="100dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
