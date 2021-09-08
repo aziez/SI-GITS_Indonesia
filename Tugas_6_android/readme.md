@@ -29,13 +29,13 @@ Bebas menggunakan Layout apapun, yang terpenting memenuhi kriteria di atas.
 **Konsep Dasar OOP Bahasa Java dan Pengenalan Android Studio**
 
 # 5. Preview Program
-![alt text](https://github.com/aziez/SI-GITS_Indonesia/blob/main/Tugas_6_Android/Hasil_build.gif)
+![alt text](https://github.com/aziez/SI-GITS_Indonesia/blob/main/Tugas_6_android/Hasil_build.gif)
 
 
 # 6. Keterangan
 terdapat 2 Library yang di gunakan dalam membuat aplikasi tersebut, Diantaranya : 
-- [](https://github.com/scwang90/MultiWaveHeader "WaveHeader")
-- [](https://github.com/hdodenhof/CircleImageView "CircleImageView")
+- [https://github.com/scwang90/MultiWaveHeader]("WaveHeader")
+- [https://github.com/hdodenhof/CircleImageView]("CircleImageView")
 
 **WaveHeader** digunakan untuk membuat Animasi Waves pada bagian Header dan Fotter;
 **CicrcleImagesView** digunakan untuk membuat gambar berbentuk circle
