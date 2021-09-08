@@ -34,8 +34,8 @@ Bebas menggunakan Layout apapun, yang terpenting memenuhi kriteria di atas.
 
 # 6. Keterangan
 terdapat 2 Library yang di gunakan dalam membuat aplikasi tersebut, Diantaranya : 
-- [https://github.com/scwang90/MultiWaveHeader]("WaveHeader")
-- [https://github.com/hdodenhof/CircleImageView]("CircleImageView")
+- ["WaveHeader"](https://github.com/scwang90/MultiWaveHeader)
+- ["CircleImageView"](https://github.com/hdodenhof/CircleImageView)
 
 **WaveHeader** digunakan untuk membuat Animasi Waves pada bagian Header dan Fotter;
 **CicrcleImagesView** digunakan untuk membuat gambar berbentuk circle
