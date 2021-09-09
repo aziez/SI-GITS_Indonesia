@@ -27,7 +27,7 @@ uatlah aplikasi berbasis android dengan menerapkan materi yang diberikan dengan 
 **Konsep Dasar OOP Bahasa Java dan Pengenalan Android Studio**
 
 # 5. Preview Program
-![alt text](https://github.com/aziez/SI-GITS_Indonesia/blob/main/Tugas_7-CardTugas/Hasil_build.gif)
+![alt text](https://github.com/aziez/SI-GITS_Indonesia/blob/main/Tugas_7-CardTugas/Hasil_build2.gif)
 
 
 # 6. Keterangan
