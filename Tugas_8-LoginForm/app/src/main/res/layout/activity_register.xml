@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_700"
+            android:text="REGISTER FORM" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/rounded">
+
+            <EditText
+                android:id="@+id/teNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/icNama"
+                android:background="@color/transparant"
+                android:hint="Nama"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textSize="14sp" />
+
+
+            <ImageView
+                android:id="@+id/icNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_supervised_user_circle_24"
+                android:layout_marginLeft="17dp"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded">
+
+            <EditText
+                android:id="@+id/teUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/icUsername"
+                android:background="@color/transparant"
+                android:hint="Username"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textSize="14sp" />
+
+
+            <ImageView
+                android:id="@+id/icUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_supervised_user_circle_24"
+                android:layout_marginLeft="17dp"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded">
+
+            <EditText
+                android:id="@+id/teEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/icEmail"
+                android:background="@color/transparant"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textSize="14sp" />
+
+
+            <ImageView
+                android:id="@+id/icEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_email_24"
+                android:layout_marginLeft="17dp"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded">
+
+            <EditText
+                android:id="@+id/tePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/icPasswird"
+                android:background="@color/transparant"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textSize="14sp" />
+
+
+            <ImageView
+                android:id="@+id/icPasswird"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_lock_24"
+                android:layout_marginLeft="17dp"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded">
+
+            <EditText
+                android:id="@+id/tePassword2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/icPasswird2"
+                android:background="@color/transparant"
+                android:hint="re-type password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textSize="14sp" />
+
+
+            <ImageView
+                android:id="@+id/icPasswird2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_lock_24"
+                android:layout_marginLeft="17dp"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="60dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="60dp"
+            android:paddingBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/chekya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="Saya Setuju dengan Persyaratan yang berlaku" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnRegis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="20dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/purple_700"
+            android:gravity="center"
+            android:text="Register"
+            android:background="@drawable/rounded"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
