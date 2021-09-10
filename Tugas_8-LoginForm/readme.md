@@ -28,7 +28,7 @@ Buatlah aplikasi android dengan menerapkan materi yang sudah diberikan sesuai ke
 **Konsep Dasar OOP Bahasa Java dan Pengenalan Android Studio**
 
 # 5. Preview Program
-![alt text](https://github.com/aziez/SI-GITS_Indonesia/blob/main/Tugas_8-LoginForm/Hasil_build.gif)
+![alt text](https://github.com/aziez/SI-GITS_Indonesia/blob/main/Tugas_8-LoginForm/Hasil_build2.gif)
 
 
 # 6. Keterangan
