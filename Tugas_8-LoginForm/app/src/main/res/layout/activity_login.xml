@@ -25,72 +25,50 @@
             android:textColor="@color/purple_700"
             android:text="LOGIN FORM" />
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="60dp"
-            android:layout_marginRight="60dp"
-            android:layout_marginTop="36dp"
-            android:background="@drawable/rounded">
 
-            <EditText
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/teUsername"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/icUsername"
-                android:layout_alignBottom="@+id/judul"
-                android:background="@color/transparant"
-                android:hint="Email"
-                android:inputType="textEmailAddress"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="15dp"
+                app:startIconDrawable="@drawable/ic_baseline_supervised_user_circle_24"
+                android:hint="Username"
                 android:maxLines="1"
-                android:paddingLeft="20dp"
-                android:paddingTop="15dp"
-                android:paddingBottom="15dp"
-                android:textSize="14sp" />
+                android:textSize="14sp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/reemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
 
-            <ImageView
-                android:id="@+id/icUsername"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_email_24"
-                android:layout_marginLeft="17dp"
-                android:layout_centerVertical="true"/>
 
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="60dp"
-            android:layout_marginRight="60dp"
-            android:layout_marginTop="36dp"
-            android:background="@drawable/rounded">
-
-            <EditText
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tePassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/icPasswird"
-                android:background="@color/transparant"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="15dp"
+                app:startIconDrawable="@drawable/ic_baseline_lock_24"
+                app:endIconMode="password_toggle"
                 android:hint="Password"
-                android:inputType="textPassword"
                 android:maxLines="1"
-                android:paddingLeft="20dp"
-                android:paddingTop="15dp"
-                android:paddingBottom="15dp"
-                android:textSize="14sp" />
+                android:textSize="14sp">
 
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-            <ImageView
-                android:id="@+id/icPasswird"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_lock_24"
-                android:layout_marginLeft="17dp"
-                android:layout_centerVertical="true"/>
+            </com.google.android.material.textfield.TextInputLayout>
 
-        </RelativeLayout>
 
         <TextView
             android:layout_width="match_parent"
