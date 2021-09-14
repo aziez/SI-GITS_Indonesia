@@ -24,6 +24,8 @@ import java.util.ArrayList;
 public class GridProjekAdapter extends RecyclerView.Adapter<GridProjekAdapter.GridViewHolder> {
     private ArrayList<Projek> listProjek;
     private String url = "EXTRA URL";
+    private String hero = "HERO EXTRA";
+    private String nama = "NAMA EXTRA";
 
     public GridProjekAdapter(ArrayList<Projek> listProjek) {
         this.listProjek = listProjek;
@@ -60,6 +62,24 @@ public class GridProjekAdapter extends RecyclerView.Adapter<GridProjekAdapter.Gr
             }
         });
 
+        holder.btnShare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                url = listProjek.get(holder.getAdapterPosition()).getUrl();
+                nama = listProjek.get(holder.getAdapterPosition()).getNama();
+
+                Intent shareIntent = new Intent();
+                shareIntent.setAction(Intent.ACTION_SEND);
+                shareIntent.putExtra(Intent.EXTRA_TEXT, nama + url);
+                shareIntent.setType("text/plain");
+
+                Intent seendIntent = Intent.createChooser(shareIntent, null);
+                v.getContext().startActivity(seendIntent);
+
+
+            }
+        });
+
     }
 
     @Override
@@ -71,6 +91,7 @@ public class GridProjekAdapter extends RecyclerView.Adapter<GridProjekAdapter.Gr
         ImageView heroImg;
         TextView tvprojek;
         Button button;
+        Button btnShare;
 
 
         public GridViewHolder(@NonNull View itemView) {
@@ -78,6 +99,7 @@ public class GridProjekAdapter extends RecyclerView.Adapter<GridProjekAdapter.Gr
             heroImg = itemView.findViewById(R.id.img_hero);
             tvprojek = itemView.findViewById(R.id.nameGrid);
             button = itemView.findViewById(R.id.btnView);
+            btnShare = itemView.findViewById(R.id.btnShare);
 
         }
     }

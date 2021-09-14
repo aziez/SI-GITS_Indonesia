@@ -56,8 +56,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        SweetAlertDialog sweetAlertDialog = new SweetAlertDialog(this, SweetAlertDialog.WARNING_TYPE);
-        sweetAlertDialog.setTitleText("Keluar ?")
+       new SweetAlertDialog(MainActivity.this, SweetAlertDialog.WARNING_TYPE)
+                    .setTitleText("Keluar ?")
                     .setContentText("bener nih keluar")
                     .setCancelText("NO")
                     .setConfirmText("YA")
@@ -71,8 +71,9 @@ public class MainActivity extends AppCompatActivity {
                     .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
                         @Override
                         public void onClick(SweetAlertDialog sweetAlertDialog) {
+                            sweetAlertDialog.dismissWithAnimation();
+                            finish();
                             MainActivity.super.onBackPressed();
-                            System.exit(0);
                         }
                     }).show();
 
