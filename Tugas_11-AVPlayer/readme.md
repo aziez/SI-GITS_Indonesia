@@ -28,7 +28,7 @@ Buatlah aplikasi android dengan menerapkan materi yang diberikan dengan ketentua
 **Pemahaman Lebih Dalam Membuat Aplikasi Android**
 
 # 5. Preview Program
-![alt text](https://github.com/aziez/SI-GITS_Indonesia/tree/main/Tugas_11-AVPlayer/Hasil_build2.gif)
+![alt text](https://github.com/aziez/SI-GITS_Indonesia/blob/main/Tugas_11-AVPlayer/Hasil_build2.gif)
 
 
 
