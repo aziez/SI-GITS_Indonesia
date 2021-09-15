@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabAtas"
+        android:layout_marginTop="0dp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabAtas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:tabIndicatorColor="@color/teal_700"
+        app:tabRippleColor="@color/purple_500"
+        app:tabMode="fixed" >
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="music"
+            android:icon="@drawable/ic_baseline_library_music_24"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="video"
+            android:icon="@drawable/ic_baseline_video_library_24"/>
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+
+</RelativeLayout>
