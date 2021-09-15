@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:padding="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        app:civ_circle_background_color="@color/material_on_surface_stroke"
+        android:src="@drawable/bg_circle"
+        app:civ_border_color="#000000"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/textbg"
+        android:layout_width="47dp"
+        android:layout_height="28dp"
+        android:layout_alignStart="@+id/profile_image"
+        android:layout_alignTop="@+id/profile_image"
+        android:layout_alignEnd="@+id/profile_image"
+        android:layout_alignBottom="@+id/profile_image"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="29dp"
+        android:text="NMA"
+        android:textColor="@color/icon_tint_normal"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:foregroundGravity="center_vertical"
+        android:layout_toEndOf="@+id/profile_image"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            android:paddingTop="6dp"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="16sp"
+            android:text="Nama Kontak"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            android:text="Email Kontak"
+            android:textColor="@color/purple_500" />
+        <TextView
+            android:id="@+id/nomor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            android:text="+62811545454"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+</RelativeLayout>
