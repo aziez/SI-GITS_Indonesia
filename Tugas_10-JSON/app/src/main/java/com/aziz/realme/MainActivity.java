@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
         contactList = new ArrayList<>();
         lv = (ListView) findViewById(R.id.list);
-        
+
 
         disableSSLCertificateChecking();
         new GetContacts().execute();
