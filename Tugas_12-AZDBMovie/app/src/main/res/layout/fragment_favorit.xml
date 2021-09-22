@@ -6,10 +6,9 @@
     android:background="@drawable/gradient_bg"
     tools:context=".fragment.FavoritFragment">
 
-    <ImageView
-        android:padding="86dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFavorite"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/ic_baseline_favorite_24" />
+        android:layout_height="match_parent" />
 
 </FrameLayout>

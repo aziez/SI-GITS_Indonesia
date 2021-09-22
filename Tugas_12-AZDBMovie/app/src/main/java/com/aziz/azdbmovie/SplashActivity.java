@@ -18,32 +18,9 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        checkInternet();
+        initMain();
 
     }
-
-    private void checkInternet() {
-        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-
-        if (connectivityManager.getActiveNetworkInfo() != null){
-            Toast.makeText(this, "Internet Terhubung", Toast.LENGTH_SHORT).show();
-            initMain();
-        }else{
-            new SweetAlertDialog(this, SweetAlertDialog.ERROR_TYPE)
-                    .setTitleText("Oops...")
-                    .setContentText("Internet Tidak terhubung!")
-                    .setConfirmText("Reload")
-                    .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
-                        @Override
-                        public void onClick(SweetAlertDialog sweetAlertDialog) {
-                            finish();
-                            startActivity(getIntent());
-                        }
-                    })
-                    .show();
-        }
-    }
-
 
     private void initMain() {
         new Handler().postDelayed(new Runnable() {

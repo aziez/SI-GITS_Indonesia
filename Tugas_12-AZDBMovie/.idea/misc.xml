@@ -8,13 +8,15 @@
         <entry key="..\:/GITS_SI/Tugas_12-AZDBMovie/app/src/main/res/drawable/indicator.xml" value="0.20416666666666666" />
         <entry key="..\:/GITS_SI/Tugas_12-AZDBMovie/app/src/main/res/drawable/indicator_default.xml" value="0.20416666666666666" />
         <entry key="..\:/GITS_SI/Tugas_12-AZDBMovie/app/src/main/res/layout/activity_detail.xml" value="0.33" />
+        <entry key="..\:/GITS_SI/Tugas_12-AZDBMovie/app/src/main/res/layout/activity_fav_detail.xml" value="0.22" />
         <entry key="..\:/GITS_SI/Tugas_12-AZDBMovie/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/GITS_SI/Tugas_12-AZDBMovie/app/src/main/res/layout/activity_splash.xml" value="0.18" />
-        <entry key="..\:/GITS_SI/Tugas_12-AZDBMovie/app/src/main/res/layout/fragment_favorit.xml" value="0.19375" />
-        <entry key="..\:/GITS_SI/Tugas_12-AZDBMovie/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/GITS_SI/Tugas_12-AZDBMovie/app/src/main/res/layout/favorite_item.xml" value="0.25" />
+        <entry key="..\:/GITS_SI/Tugas_12-AZDBMovie/app/src/main/res/layout/fragment_favorit.xml" value="0.292259083728278" />
+        <entry key="..\:/GITS_SI/Tugas_12-AZDBMovie/app/src/main/res/layout/fragment_home.xml" value="0.2" />
         <entry key="..\:/GITS_SI/Tugas_12-AZDBMovie/app/src/main/res/layout/fragment_tv_show.xml" value="0.12771739130434784" />
         <entry key="..\:/GITS_SI/Tugas_12-AZDBMovie/app/src/main/res/layout/movie_grid.xml" value="0.22" />
-        <entry key="..\:/GITS_SI/Tugas_12-AZDBMovie/app/src/main/res/layout/movie_item.xml" value="0.12" />
+        <entry key="..\:/GITS_SI/Tugas_12-AZDBMovie/app/src/main/res/layout/movie_item.xml" value="0.25" />
         <entry key="..\:/GITS_SI/Tugas_12-AZDBMovie/app/src/main/res/layout/slide_item.xml" value="0.18" />
         <entry key="..\:/GITS_SI/Tugas_12-AZDBMovie/app/src/main/res/menu/bottom_menu.xml" value="0.18802083333333333" />
         <entry key="..\:/GITS_SI/Tugas_12-AZDBMovie/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.20989583333333334" />
@@ -26,5 +28,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="SuppressABINotification">
+    <option name="modulesWithSuppressedNotConfigured">
+      <set>
+        <option value="AZ_DBMovie.app" />
+      </set>
+    </option>
   </component>
 </project>

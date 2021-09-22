@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/fav_baner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="32dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <ImageView
+        android:id="@+id/fav_hero"
+        android:layout_width="95dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="78dp"
+        android:scaleType="centerCrop"
+        android:transitionName="sharedName"
+        app:layout_constraintBottom_toBottomOf="@+id/fav_baner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fav_baner"
+        app:layout_constraintVertical_bias="0.48000002"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/tv_fav_judul"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textSize="18sp"
+        android:text="Judul Biasanya sampai dua baris makanya saya bikin 2"
+        app:layout_constraintBottom_toBottomOf="@+id/fav_baner"
+        app:layout_constraintEnd_toEndOf="@+id/fav_baner"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toEndOf="@+id/fav_hero"
+        app:layout_constraintTop_toTopOf="@+id/fav_baner"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_fav_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Director : Nama Pembuat Film "
+        app:layout_constraintStart_toEndOf="@+id/fav_hero"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fav_judul" />
+
+    <TextView
+        android:id="@+id/tv_fav_ket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:maxLines="2"
+        android:text="keterangan dibikin panjang namun hanya bisa menampilkan 2 baris"
+        app:layout_constraintStart_toEndOf="@+id/fav_hero"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fav_date" />
+
+    <TextView
+        android:id="@+id/tv_fav_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9.5"
+        android:textColor="@color/purple_500"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/fav_baner"
+        app:layout_constraintEnd_toEndOf="@+id/fav_baner"
+        app:layout_constraintStart_toStartOf="@+id/tv_ket"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ket" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

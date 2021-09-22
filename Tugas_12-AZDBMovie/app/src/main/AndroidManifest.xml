@@ -11,29 +11,29 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher"
-        tools:replace="android:icon"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AZDBMovie">
-
+        android:theme="@style/Theme.AZDBMovie"
+        tools:replace="android:icon">
+        <activity
+            android:name=".FavDetailActivity"
+            android:exported="true" />
         <activity
             android:name=".SplashActivity"
-            android:theme="@style/Theme.Design.NoActionBar"
+            android:exported="true"
             android:noHistory="true"
-            android:exported="true">
-        <intent-filter>
-            <category android:name="android.intent.category.LAUNCHER" />
-            <action android:name="android.intent.action.MAIN" />
-        </intent-filter>
+            android:theme="@style/Theme.Design.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
 
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
         </activity>
-
         <activity
             android:name=".DetailActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>

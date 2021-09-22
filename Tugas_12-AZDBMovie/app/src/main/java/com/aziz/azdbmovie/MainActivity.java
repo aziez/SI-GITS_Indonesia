@@ -5,13 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.room.Room;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.aziz.azdbmovie.database.AppDatabase;
 import com.aziz.azdbmovie.fragment.FavoritFragment;
 import com.aziz.azdbmovie.fragment.HomeFragment;
 import com.aziz.azdbmovie.fragment.TvShowFragment;
@@ -24,15 +28,17 @@ public class MainActivity extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;
     private Fragment fragment;
     private FragmentManager fragmentManager;
+    public static AppDatabase database;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        initMain();
+       initMain();
 
     }
+
 
     private void initMain() {
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomView);
@@ -40,6 +46,13 @@ public class MainActivity extends AppCompatActivity {
 
         fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.frameLayout, new HomeFragment()).commit();
+
+        database = Room.databaseBuilder(getApplicationContext(), AppDatabase.class, "dbmovie")
+                .allowMainThreadQueries()
+                .fallbackToDestructiveMigration()
+                .build();
+
+
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override

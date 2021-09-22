@@ -27,10 +27,10 @@ public class DetailActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
-        txtDesc = findViewById(R.id.detail_movie_desc);
-        txtJudul = findViewById(R.id.detail_movie_title);
-        imgCover = findViewById(R.id.detail_movie_cover);
-        imgHero = findViewById(R.id.detail_movie_img);
+        txtDesc = findViewById(R.id.favDetailDesc);
+        txtJudul = findViewById(R.id.favDetailTitle);
+        imgCover = findViewById(R.id.fav_baner);
+        imgHero = findViewById(R.id.fav_hero);
         ratBar = findViewById(R.id.ratingBar);
 
         txtJudul.setText(title);

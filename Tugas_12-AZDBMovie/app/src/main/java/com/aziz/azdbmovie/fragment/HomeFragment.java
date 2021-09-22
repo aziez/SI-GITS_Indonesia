@@ -1,7 +1,10 @@
 package com.aziz.azdbmovie.fragment;
 
+import android.content.Context;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
 
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -12,6 +15,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.aziz.azdbmovie.R;
@@ -22,6 +27,7 @@ import com.aziz.azdbmovie.api.ApiConfig;
 import com.aziz.azdbmovie.api.ApiService;
 import com.aziz.azdbmovie.model.MovieModel;
 import com.aziz.azdbmovie.model.ResultsItem;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
@@ -31,7 +37,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class HomeFragment extends Fragment {
+public class HomeFragment extends Fragment implements View.OnClickListener {
     private final String TAG = "debug";
     private ViewPager viewPager;
     private TabLayout tabLayout;
@@ -39,6 +45,9 @@ public class HomeFragment extends Fragment {
     private RecyclerView rv2;
     private List<ResultsItem> resList;
     private  View view;
+    private LinearLayout linearLayout;
+    private ConstraintLayout main;
+    private ImageButton refresh;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -47,13 +56,33 @@ public class HomeFragment extends Fragment {
         tabLayout = view.findViewById(R.id.indicator);
         rv = view.findViewById(R.id.Rv_movies);
         rv2 = view.findViewById(R.id.rv_allMovie);
+        linearLayout = view.findViewById(R.id.offline);
+        main = view.findViewById(R.id.mainContent);
+        refresh = view.findViewById(R.id.btnRefresh);
 
+        refresh.setOnClickListener(this);
 
-        GetUpcoming();
-        getNowPlaying();
-        getPopularMovie();
+        getConection();
+
 
         return view;
+    }
+
+    private void getConection(){
+        ConnectivityManager connectivityManager = (ConnectivityManager) getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        if (connectivityManager.getActiveNetworkInfo() != null){
+            Toast.makeText(getActivity(), "Internet Terhubung", Toast.LENGTH_SHORT).show();
+            linearLayout.setVisibility(View.GONE);
+            main.setVisibility(View.VISIBLE);
+            GetUpcoming();
+            getNowPlaying();
+            getPopularMovie();
+        }else{
+            Toast.makeText(getActivity(), "Tidak Ada Internet", Toast.LENGTH_LONG).show();
+            main.setVisibility(View.GONE);
+            linearLayout.setVisibility(View.VISIBLE);
+        }
     }
 
     private void getPopularMovie() {
@@ -140,4 +169,8 @@ public class HomeFragment extends Fragment {
 
     }
 
+    @Override
+    public void onClick(View v) {
+        Toast.makeText(v.getContext(), "Gagal", Toast.LENGTH_SHORT).show();
+    }
 }
